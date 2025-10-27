@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        /* NAVBAR */
+        .nav{
+            position: sticky;
+            top: 0px;
+        }
+        nav{
+            padding: 10px;
+            background-color: #6C63FF;
+            background: linear-gradient(90deg, #6C63FF, #B47AEA);
+        }
+        .nav li{
+            list-style: none;
+            display: inline;
+            padding: 10px 40px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        /* Container */
+
+        .container{
+            height: 530px;
+            background-color:#E0E0FF; ;
+            
+        }
+        .container .box1{
+            margin: 10px;
+            width: 40vw;
+            padding: 10px;
+            float: left;
+            background-color: #F5F3FF;
+            border: 2px solid #B47AEA;
+            box-shadow: 0 4px 10px rgba(108, 99, 255, 0.2);
+            height: -webkit-fill-available;
+        }
+        .container p{
+            color: black;
+        }
+        .container .box2{
+            margin: 10px;
+            width: 40vw;
+            padding: 10px;
+            float: right;
+            border: 2px solid #B47AEA;
+            background-color: #F5F3FF;
+            box-shadow: 0 4px 10px rgba(108, 99, 255, 0.2);
+            /* height: 285px; */
+            height: -webkit-fill-available;
+        }
+        .capsule{
+            margin: 5px 5px 2px 5px;
+            padding: 100px;
+            color: black;
+            border: 2px solid #B47AEA;
+            background-color: #F5F3FF;
+            box-shadow: 0 4px 10px rgba(108, 99, 255, 0.2);
+            border-radius: 7px;
+            text-align: center;
+        }
+
+        /* Footer */
+
+        footer {
+            background: linear-gradient(90deg, #6C63FF, #B47AEA);
+            color: #FFFFFF;
+            text-align: center;
+            
+        }
+
+        /* Logo */
+
+        .logo{
+            height: 30px;
+            width: 30px;
+            background-color: purple ;
+            position: fixed;
+            bottom: 12px;
+            right: 23px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="https://youtu.be/8Hk4MmO9ZeQ?si=uB9TzZeVmMruMI6E" target="_main">Login</li>
+                <li><a href="https://youtu.be/8Hk4MmO9ZeQ?si=uB9TzZeVmMruMI6E" target="_main">About</li>
+                <li><a href="https://youtu.be/8Hk4MmO9ZeQ?si=uB9TzZeVmMruMI6E" target="_main">Contact</li>
+                <li><a href="https://youtu.be/8Hk4MmO9ZeQ?si=uB9TzZeVmMruMI6E" target="_main">Help</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="box1">
+            <p> CodeWithHarry, whose real name is Harish Kumar, is a well-known Indian YouTuber, educator, and software developer who creates free programming tutorials primarily in Hindi. He is widely recognized for his ability to explain complex coding concepts in a simple and easy-to-understand manner, making him one of the most popular coding educators in India. Through his YouTube channel, CodeWithHarry, and his website, he provides tutorials and full-length courses on topics such as web development, Python, C, C++, Java, data structures and algorithms, and more. His teaching style focuses on practical, project-based learning, which helps beginners gain hands-on experience while understanding the fundamentals of programming. One of his most popular offerings is the “Sigma Web Development Course,” a structured and beginner-friendly series designed to help students learn full-stack web development from scratch. Many college students and beginners in India start their coding journey through his content, as he makes learning programming accessible, engaging, and enjoyable.</p>
+        </div>
+        <div class="box2">
+            <p>CodeWithHarry teaches a wide range of programming and web development topics aimed primarily at beginners and intermediate learners. His tutorials cover the fundamentals of programming languages such as C, C++, Java, and Python, helping students understand basic to advanced concepts through clear and simple explanations. He also provides comprehensive courses on web development, including HTML, CSS, JavaScript, React, and Django, guiding learners in building real-world projects and websites. In addition to these, he teaches data structures and algorithms, Git and GitHub, machine learning basics, and various software development tools. His content is known for being practical, project-based, and easy to follow, allowing students to gain hands-on experience while learning. Through his YouTube channel and website, CodeWithHarry helps learners develop strong coding skills and prepares them for internships, projects, and tech careers — all while teaching in a friendly and engaging Hindi style.</p>
+        </div>
+    </div>
+    <div class="capsule">
+        Welcome to Sigma Web Development Express
+    </div>
+    <div class="logo"></div>
+    <footer>
+    <div class="footer">
+        <ul>
+            <li><a href="https://www.youtube.com/@CodeWithHarry">YouTube</a></li>
+            <li><a href="https://github.com/codewithharry">Github</a></li>
+            <li><a href="https://www.instagram.com/codewithharry/#">Instagram</a></li>
+            <li><a href="https://www.facebook.com/CodeWithHarry">Facebook</a></li>
+        </ul>
+    </div>
+    </footer>
+    
+</body>
+</html>
