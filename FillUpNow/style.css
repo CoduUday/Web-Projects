@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --background: 120 20% 99%;
+    --foreground: 150 25% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 150 25% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 25% 12%;
+    --primary: 152 60% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 145 40% 94%;
+    --secondary-foreground: 152 60% 28%;
+    --muted: 140 20% 96%;
+    --muted-foreground: 150 10% 45%;
+    --accent: 158 65% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 145 25% 88%;
+    --input: 145 25% 88%;
+    --ring: 152 60% 36%;
+    --radius: .75rem;
+    --gradient-hero: linear-gradient(135deg, hsl(152 60% 36%) 0%, hsl(158 65% 45%) 50%, hsl(165 55% 52%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(145 40% 98%) 100%);
+    --gradient-surface: linear-gradient(135deg, hsl(145 40% 98%) 0%, hsl(140 30% 96%) 100%);
+    --shadow-sm: 0 2px 8px -2px hsl(152 60% 36% / .08);
+    --shadow-md: 0 8px 24px -8px hsl(152 60% 36% / .12);
+    --shadow-lg: 0 16px 48px -12px hsl(152 60% 36% / .18);
+    --shadow-glow: 0 0 40px hsl(152 60% 36% / .25);
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    display: flex;
+    height: 80px;
+    background-color: #fcfdfc;
+    align-items: center;
+        background-color: #d4ebe1;
+        /* justify-content: space-around; */
+
+}
+nav .navimage{
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-hero);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin: 8px;
+}
+.navimage svg{
+    position: relative;
+    top: 2px;
+}
+.navtitle{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0px;
+}
+.navtitle span{
+        
+
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+
+}
+.navtitle span:nth-child(2){
+
+  
+    background: linear-gradient(
+        135deg,
+        hsl(152 60% 36%) 0%,
+        hsl(158 65% 45%) 50%,
+        hsl(165 55% 52%) 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+}
