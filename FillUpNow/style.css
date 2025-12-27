@@ -61,9 +61,13 @@ nav .navimage{
     border-radius: 12px;
     margin: 8px;
 }
+
 .navimage svg{
     position: relative;
     top: 2px;
+}
+.first{
+    display: flex;
 }
 .navtitle{
     justify-content: center;
