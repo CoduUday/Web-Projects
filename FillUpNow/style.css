@@ -1,194 +1,285 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
-    --background: 120 20% 99%;
-    --foreground: 150 25% 12%;
-    --card: 0 0% 100%;
-    --card-foreground: 150 25% 12%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 150 25% 12%;
-    --primary: 152 60% 36%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 145 40% 94%;
-    --secondary-foreground: 152 60% 28%;
-    --muted: 140 20% 96%;
-    --muted-foreground: 150 10% 45%;
-    --accent: 158 65% 45%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 145 25% 88%;
-    --input: 145 25% 88%;
-    --ring: 152 60% 36%;
-    --radius: .75rem;
-    --gradient-hero: linear-gradient(135deg, hsl(152 60% 36%) 0%, hsl(158 65% 45%) 50%, hsl(165 55% 52%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(145 40% 98%) 100%);
-    --gradient-surface: linear-gradient(135deg, hsl(145 40% 98%) 0%, hsl(140 30% 96%) 100%);
-    --shadow-sm: 0 2px 8px -2px hsl(152 60% 36% / .08);
-    --shadow-md: 0 8px 24px -8px hsl(152 60% 36% / .12);
-    --shadow-lg: 0 16px 48px -12px hsl(152 60% 36% / .18);
-    --shadow-glow: 0 0 40px hsl(152 60% 36% / .25);
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  --background: 120 20% 99%;
+  --foreground: 150 25% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 150 25% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 150 25% 12%;
+  --primary: 152 60% 36%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 145 40% 94%;
+  --secondary-foreground: 152 60% 28%;
+  --muted: 140 20% 96%;
+  --muted-foreground: 150 10% 45%;
+  --accent: 158 65% 45%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 145 25% 88%;
+  --input: 145 25% 88%;
+  --ring: 152 60% 36%;
+  --radius: 0.75rem;
+  --gradient-hero: linear-gradient(
+    135deg,
+    hsl(152 60% 36%) 0%,
+    hsl(158 65% 45%) 50%,
+    hsl(165 55% 52%) 100%
+  );
+  --gradient-card: linear-gradient(
+    180deg,
+    hsl(0 0% 100%) 0%,
+    hsl(145 40% 98%) 100%
+  );
+  --gradient-surface: linear-gradient(
+    135deg,
+    hsl(145 40% 98%) 0%,
+    hsl(140 30% 96%) 100%
+  );
+  --shadow-sm: 0 2px 8px -2px hsl(152 60% 36% / 0.08);
+  --shadow-md: 0 8px 24px -8px hsl(152 60% 36% / 0.12);
+  --shadow-lg: 0 16px 48px -12px hsl(152 60% 36% / 0.18);
+  --shadow-glow: 0 0 40px hsl(152 60% 36% / 0.25);
+  --sidebar-background: 0 0% 98%;
+  --sidebar-foreground: 240 5.3% 26.1%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
 }
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-nav{
-    display: flex;
-    height: 90px;
-    background-color: #fcfdfc;
-    align-items: center;
-        background-color: #d4ebe1;
-        justify-content: space-around;
+body{
+     font-family: "Outfit", sans-serif;
+     
+}
+/* Nav content */
+nav {
+  display: flex;
+  height: 90px;
+  background-color: #fcfdfc;
+  align-items: center;
+  background-color: #d4ebe1;
+  justify-content: space-around;
+}
+nav .navimage {
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-hero);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin: 8px;
+}
 
+.navimage svg {
+  position: relative;
+  top: 2px;
 }
-nav .navimage{
-    width: 40px;
-    height: 40px;
-    background: var(--gradient-hero);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    margin: 8px;
+.first {
+  display: flex;
 }
-
-.navimage svg{
-    position: relative;
-    top: 2px;
+.navtitle {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 0px;
 }
-.first{
-    display: flex;
-}
-.navtitle{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 0px;
-}
-.navtitle span{
-        
-
+.navtitle span {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 23px;
-
 }
-.navtitle span:nth-child(2){
+.navtitle span:nth-child(2) {
+  background: linear-gradient(
+    135deg,
+    hsl(152 60% 36%) 0%,
+    hsl(158 65% 45%) 50%,
+    hsl(165 55% 52%) 100%
+  );
 
-  
-    background: linear-gradient(
-        135deg,
-        hsl(152 60% 36%) 0%,
-        hsl(158 65% 45%) 50%,
-        hsl(165 55% 52%) 100%
-    );
+  -webkit-background-clip: text;
+  background-clip: text;
 
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-
-
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
-.second{
-    display: flex;
-    gap: 2rem;
+.second {
+  display: flex;
+  gap: 2rem;
 }
-.second a{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: hsl(var(--muted-foreground));
-    font-family: Outfit, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25rem;
+.second a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: hsl(var(--muted-foreground));
+  font-family: Outfit, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25rem;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;;
 }
-.second a:hover{
-    color: black;
+.second a:hover {
+  color: black;
 }
-.second a svg{
-    height: 1rem;
-    width: 1rem;
-    position: relative;
-    bottom: 1px;
+.second a svg {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  bottom: 1px;
 }
 .third {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
-.third button{
-    padding: 0.5rem 1.2rem;
-    background-color: hsl(var(--primary));
-    border-radius:calc(var(--radius) - 2px);;
-    font-family: Outfit, sans-serif;
-    font-weight: 600;
-    font-size: .875rem;
-    line-height: 1.25rem;
-     cursor: pointer;
+.third button {
+  padding: 0.5rem 1.2rem;
+  background-color: hsl(var(--primary));
+  border-radius: calc(var(--radius) - 2px);
+  font-family: Outfit, sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  cursor: pointer;
 }
-.third button:first-child{
+.third button:first-child {
+  display: flex;
+  justify-content: center;
+  border: 2px solid hsl(var(--primary));
+  background: transparent;
+  color: hsl(var(--primary));
+}
+@keyframes buttonanimation {
+  from {
     display: flex;
     justify-content: center;
     border: 2px solid hsl(var(--primary));
     background: transparent;
     color: hsl(var(--primary));
-}
-@keyframes buttonanimation{
-    from{
-        display: flex;
-    justify-content: center;
-    border: 2px solid hsl(var(--primary));
-    background: transparent;
-    color: hsl(var(--primary));
-    }
-    to{
-        display: flex;
-    justify-content: center;
-    border: 2px solid hsl(var(--primary));
-    background: transparent;
-    background-color: hsl(var(--primary));
-    color: white;
-    }
-}
-#signup:hover{
-   
-    animation: buttonanimation 0.5s cubic-bezier(.4, 0, .2, 1) 0s forwards;
-
-}
-.third button:last-child{
+  }
+  to {
     display: flex;
     justify-content: center;
     border: 2px solid hsl(var(--primary));
     background: transparent;
     background-color: hsl(var(--primary));
     color: white;
-    transition: transform 0.3s cubic-bezier(.4, 0, .2, 1),
-    box-shadow 0.3s ease;
-  
+  }
+}
+#signup:hover {
+  animation: buttonanimation 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s forwards;
+}
+.third button:last-child {
+  display: flex;
+  justify-content: center;
+  border: 2px solid hsl(var(--primary));
+  background: transparent;
+  background-color: hsl(var(--primary));
+  color: white;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
 }
 
 .third button:last-child:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
-.third button svg{
+.third button svg {
+  height: 1.2rem;
+  width: 1.2rem;
+  position: relative;
+  bottom: 1px;
+}
+.bodybackground {
+  background: var(--gradient-hero);
+  height: 100vh;
+}
+
+/* Main Content */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+}
+.float {
+  animation: float 6s ease-in-out infinite;
+  border-radius: 100px;
+  background-color: hsl(var(--primary-foreground) / 0.05);
+  border-color: hsl(var(--border));
+  position: absolute;
+}
+.float1 {
+  width: 6rem;
+  height: 6rem;
+  top: 15rem;
+  left: 3rem;
+}
+.float2 {
+  animation-delay: 2s;
+  width: 9rem;
+  height: 9rem;
+  top: 45%;
+  right: 5rem;
+}
+.float3 {
+  animation-delay: 4s;
+  width: 5rem;
+  height: 5rem;
+  bottom: 25%;
+  left: 25%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: hsl(var(--primary-foreground));
+    padding: 0.6rem 1rem;
+    background-color: hsl(var(--primary-foreground) / 0.1);
+    border-color: hsl(var(--border));
+    border-radius: 9999px;
+    margin-top: 40px;
+        font-size: 1rem;
+    line-height: 1.25rem;
+        font-weight: 500;
+}
+.title svg{
     height: 1.2rem;
     width: 1.2rem;
+}
+
+.heading{
+    font-size: 5rem;
+        line-height: 1;
+        color: hsl(var(--primary-foreground));
+
+}
+.heading1{
+    margin-top: 1.5rem;
+}
+#maggie{
+    width: 20%;
     position: relative;
-    bottom: 1px;
+    top: 5px;
 }
