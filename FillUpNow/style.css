@@ -283,3 +283,31 @@ nav .navimage {
     position: relative;
     top: 5px;
 }
+.content p{
+  color: hsl(var(--primary-foreground) / .8);
+  font-size: 1.4rem;
+        line-height: 1.75rem;
+        text-align: center;
+        margin-top: 15px;
+}
+.button{
+  display: flex;
+  gap: 15px;
+}
+.button button{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem 2rem;
+}
+.button button:first-child{
+  text-decoration: none;
+  background-color: hsl(var(--primary-foreground) / .9);
+  border: none;
+  color: hsl(var(--primary));;
+  
+}
