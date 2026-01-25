@@ -71,7 +71,7 @@ body {
    ======================================== */
 .bodybackground {
     background: var(--gradient-hero);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* ========================================
@@ -83,6 +83,14 @@ nav {
     align-items: center;
     justify-content: space-around;
     background-color: #d4ebe1;
+    
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+
+
 }
 
 /* Nav Logo Section */
@@ -437,6 +445,7 @@ nav {
   align-items: center;
     margin-top: 100px;
     gap: 10px;
+    margin-bottom: 64px;
 }
 .content2 .capsule span{
   color: #1d724a;
@@ -452,4 +461,59 @@ nav {
   color: #677e73;
   font-size: 18px;
 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .benefits{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 35px;
+    margin-left: 80px;
+    margin-right: 80px;
+   
+}
+
+.container .benefits .box{
+    
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-hero);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition:all 0.3s cubic-bezier(.4, 0, .2, 1);
+}
+.container .benefits .bigbox .box .svg{
+    width: 1.9rem;
+    height: 1.9rem;
+}
+.heading3{
+   color: hsl(var(--foreground));
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.para{
+color: #677e73;
+font-size: 18px;
+}
+
+.bigbox{
+        background: var(--gradient-card);
+        border: 1px solid #d9e8df;
+        border-radius: 1rem;
+        padding: 2.2rem;
+        transition:all 0.3s cubic-bezier(.4, 0, .2, 1);
+}
+.bigbox:hover{
+    box-shadow: var(--shadow-lg);
+}
+.bigbox:hover .box{
+  transform: scale(1.05);
 }
