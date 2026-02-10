@@ -1,0 +1,32 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+align-items: center;
+}
+.invert{
+    filter: invert(1);
+}
+.m-1{
+    margin: 5px;
+}
+.rounded{
+    border-radius: 9px;
+}
+.p-1{
+padding: 10px;
+}
+.hiddenBox {
+  display: none;
+}
+.max{
+    max-width: 24px;
+    max-height: 24px;
+}
