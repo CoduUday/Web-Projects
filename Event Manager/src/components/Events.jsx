@@ -180,7 +180,7 @@ const Events = () => {
             </button>
           </div>
           {addEvent && (
-            <div className=" addevent my-2 mx-38 rounded-lg p-2.5">
+            <div className="animate-form-in addevent my-2 mx-38 rounded-lg p-2.5">
               <div className="bg-[#202020] border-[#333333] border flex flex-col p-5 rounded-lg">
                 <form onSubmit={handleSubmit}>
                   <div className="bg-[#202020] input flex flex-col gap-2 px-5 py-2.5 ">
@@ -346,7 +346,7 @@ const Events = () => {
               {sortedEvents.map((event) => {
                 return (
                   <div
-                    className="eventcard group mb-2.5 p-5 rounded-lg bg-[#202020] border border-[#333333] hover:border-white"
+                    className="animate-event-in eventcard group mb-2.5 p-5 rounded-lg bg-[#202020] border border-[#333333] hover:border-white"
                     key={event._id}
                   >
                     <div className="flex justify-between items-center">

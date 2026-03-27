@@ -207,7 +207,7 @@ const Home = () => {
                   return (
                     <div
                       key={todo.id}
-                      className="flex items-center justify-between gap-2.5 px-3 py-2"
+                      className="animate-todo-in flex items-center justify-between gap-2.5 px-3 py-2"
                     >
                       <div className="todoitem flex items-center gap-2.5">
                         <input
