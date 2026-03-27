@@ -182,7 +182,7 @@ const Home = () => {
     <>
       <div className="content flex bg-[#191919]">
         <Navbar />
-        <div className="main w-full h-[64px] align-bottom bg-[#191919]">
+        <div className="main w-full overflow-y-auto h-screen align-bottom bg-[#191919]">
           <div className=" greetings justify-center items-center flex flex-col h-50 gap-2.5">
             <p className="text-white text-3xl font-semibold font-sans">
               {Greeting}
